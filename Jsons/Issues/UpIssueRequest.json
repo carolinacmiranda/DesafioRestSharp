@@ -1,0 +1,47 @@
+{
+  "summary": "Fazendo uma atualização do problema API Rest",
+  "priority": {
+    "name": "high"
+  },
+  "handler": {
+  	"name": "vboctor"
+  },
+  "status": {
+  	"name": "assigned"
+  },
+  "notes": [
+    {
+      "id": 12,
+      "reporter": {
+        "name": "vboctor"
+      },
+      "text": "Este problema foi atualizado",
+      "view_state": {
+        "id": 12,
+        "name": "public",
+        "label": "public"
+      },
+      "type": "note"
+    },
+    {
+      "reporter": {
+        "name": "vboctor"
+      },
+      "text": "another note 1.",
+      "view_state": {
+        "name": "public"
+      },
+      "type": "note"
+    },
+    {
+      "reporter": {
+        "name": "vboctor"
+      },
+      "text": "Another note 2",
+      "view_state": {
+        "name": "public"
+      },
+      "type": "note"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+    "id": 2,
+    "username": "",
+    "password": "teste123",
+    "real_name": "carolina",
+    "email": "teste@teste.com.br",
+    "access_level": { "name": "administrator" },
+    "enabled": true,
+    "protected": false
+}

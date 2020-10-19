@@ -1,0 +1,6 @@
+{
+"client_id": "zfD5Hd5F415Ugsdy8bou7zug5QxY1aWt",
+"client_secret": "K4VId2HwMYKFY2cP5gLAArpDPBNKb1sKBw6LqLZvxSGNBfga-r4JoPCMQNXRSLNJ",
+"audience": "https://dev-ud5p-o7y.auth0.com/api/v2/",
+"grant_type": "client_credentials"
+}

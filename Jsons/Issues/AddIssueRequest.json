@@ -1,0 +1,44 @@
+{
+    "summary": "Problema API Rest",
+    "description": "Um problema na API Rest",
+    "additional_information": "API RestSharp",
+    "project": {
+        "id": 10,
+        "name": "MantisTest"
+    },
+    "category": {
+        "id": 10,
+        "name": "bugtracker"
+    },
+    "handler": {
+        "name": "vboctor"
+    },
+    "view_state": {
+        "id": 10,
+        "name": "public"
+    },
+    "priority": {
+        "name": "normal"
+    },
+    "severity": {
+        "name": "trivial"
+    },
+    "reproducibility": {
+        "name": "always"
+    },
+    "sticky": false,
+    "custom_fields": [
+        {
+            "field": {
+                "id": 10,
+                "name": "Minas Gerais"
+            },
+            "value": "Belo Horizonte"
+        }
+    ],
+    "tags": [
+        {
+            "name": "MantisTest"
+        }
+    ]
+}
