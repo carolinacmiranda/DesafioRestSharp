@@ -140,6 +140,28 @@ namespace RestSharpNetCoreTemplate.Helpers
             }
         }
 
+        public static string ExecutarScriptNodeJS()
+        {
+            string resultado;
+            string argument = @"C:\Users\Carol\source\repos\Desafio_API_Base2\Resources\ScriptNode.js";
+            ProcessStartInfo start = new ProcessStartInfo();
+            start.FileName = @"C:\Program Files\nodejs\node.exe";
+            start.Arguments = argument;
+            start.UseShellExecute = false;
+            start.RedirectStandardOutput = true;
+            using (Process process = Process.Start(start))
+            {
+                using (StreamReader reader = process.StandardOutput)
+                {
+                    string result = reader.ReadToEnd();
+                    resultado = result.Remove(14);
+                    Console.Write(result);
+                }
+            }
+
+            return resultado;
+        }
+
         /*public static string[] TesteCSV() 
         {
             Console.WriteLine("test");
