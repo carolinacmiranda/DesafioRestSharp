@@ -15,7 +15,7 @@ namespace RestSharpNetCoreTemplate.Tests.Issues
         [Obsolete]
         public void BuscarProblemasParaUmProjetoQueNãoExiste()
         {
-            string id = "1";
+            string id = "100";
             string statusCodeEsperado = "NotFound";
 
             FindIssuesProjectNotFoundRequest findIssuesProjectNotFoundRequest = new FindIssuesProjectNotFoundRequest(id);
