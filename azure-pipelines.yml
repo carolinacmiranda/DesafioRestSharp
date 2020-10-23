@@ -12,5 +12,4 @@ displayName: 'dotnet build $(buildConfiguration)'
 - task: DotNetCoreCLI@2  
 inputs:  
 command: test  
-projects: 'Desafio_RestSharp_Base2.csproj'  
 arguments: '--configuration $(buildConfiguration)' 
