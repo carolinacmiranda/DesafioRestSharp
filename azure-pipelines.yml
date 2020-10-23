@@ -3,7 +3,7 @@
 # Add steps that run tests, create a NuGet package, deploy, and more:  
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core  
 pool:  
-vmImage: 'Windows 10'  
+vmImage: 'windows-latest'  
 variables:  
 buildConfiguration: 'Release'  
 steps:  
