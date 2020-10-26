@@ -7,7 +7,8 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace RestSharpNetCoreTemplate.Tests.Issues
-{    
+{   
+    [Parallelizable(ParallelScope.All)]
     [TestFixture]
     public class FindIssuesProjectNotFoundTests : TestBase
     {

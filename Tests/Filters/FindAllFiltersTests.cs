@@ -8,6 +8,7 @@ using System.Text;
 
 namespace RestSharpNetCoreTemplate.Tests.Filters
 {   
+    [Parallelizable(ParallelScope.All)]
     [TestFixture]
     public class FindAllFiltersTests : TestBase
     {

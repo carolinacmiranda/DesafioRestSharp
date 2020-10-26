@@ -8,6 +8,7 @@ using System.Text;
 
 namespace RestSharpNetCoreTemplate.Tests.Issues
 {    
+    [Parallelizable(ParallelScope.All)]
     [TestFixture]
     public class FindIssueFileNotFoundTests : TestBase
     {

@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace RestSharpNetCoreTemplate.Tests.Issues
 {
+    [Parallelizable(ParallelScope.All)]
     [TestFixture]
     public class AddAnexoErrorIssueTests : TestBase
     {

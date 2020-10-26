@@ -8,6 +8,7 @@ using System.Text;
 
 namespace RestSharpNetCoreTemplate.Tests.Projects
 {    
+    [Parallelizable(ParallelScope.All)]
     [TestFixture]
     public class FindProjectNotFoundTests : TestBase
     {
