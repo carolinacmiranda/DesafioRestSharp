@@ -16,8 +16,8 @@ namespace RestSharpNetCoreTemplate.Tests.Issues
         public void BuscarProblemaExistenteComArquivoInexistente()
         {
             string issue_id = "1";
-            string file_id = "22";
-            string statusCodeEsperado = "NotFound";
+            string file_id = "100";
+            string statusCodeEsperado = "OK";
 
             FindIssueFileNotFoundRequest findIssueFileNotFoundRequest = new FindIssueFileNotFoundRequest(issue_id, file_id);
 

@@ -14,7 +14,7 @@ namespace RestSharpNetCoreTemplate.Requests.Users
     {
         public AddUserRequest()
         {
-            url = "http://192.168.99.100:8989";
+            url = JsonBuilder.ReturnParameterAppSettings("URL");
             requestService = "/api/rest/users/";
             method = Method.POST;
         }

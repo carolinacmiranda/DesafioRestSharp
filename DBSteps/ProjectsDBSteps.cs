@@ -15,15 +15,14 @@ namespace RestSharpNetCoreTemplate.DBSteps
             string idProjetoString = idProjeto.ToString();
             string query = File.ReadAllText(GeneralHelpers.ReturnProjectPath() + "Queries/AddNewProject.sql", Encoding.UTF8);
             query = query.Replace("$idProjeto", idProjetoString);
-            query = query.Replace("$projectDescription", " description");
             DBHelpers.ExecuteQuery(query);
 
             ExtentReportHelpers.AddTestInfo(2, "PARAMETERS: Executa query - " + query);
         }
 
-        public static void DeleteAllProjects()
+        public static void DeleteNewProject()
         {
-            string query = File.ReadAllText(GeneralHelpers.ReturnProjectPath() + "Queries/DeleteAllProjects.sql", Encoding.UTF8);
+            string query = File.ReadAllText(GeneralHelpers.ReturnProjectPath() + "Queries/DeleteNewProject.sql", Encoding.UTF8);
             DBHelpers.ExecuteQuery(query);
             ExtentReportHelpers.AddTestInfo(2, "PARAMETERS: Executa query - " + query);
         }

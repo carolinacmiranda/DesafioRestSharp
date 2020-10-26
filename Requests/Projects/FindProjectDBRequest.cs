@@ -5,16 +5,16 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace RestSharpNetCoreTemplate.Requests.Filters
+namespace RestSharpNetCoreTemplate.Requests.Projects
 {
-    public class FindAllFiltersRequest : RequestBase
+    public class FindProjectDBRequest : RequestBase
     {
-        public FindAllFiltersRequest(string filters)
+        public FindProjectDBRequest(string id)
         {
             url = JsonBuilder.ReturnParameterAppSettings("URL");
-            requestService = "/api/rest/filters";
+            requestService = "/api/rest/projects/30";
             method = Method.GET;
-            parameters.Add("filters", filters);
+            parameters.Add("30", id);
         }
     }
 }

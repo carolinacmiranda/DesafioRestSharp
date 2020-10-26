@@ -22,7 +22,7 @@ namespace RestSharpNetCoreTemplate.Tests.NodeJS
         public void CadastrarProblemaComTagExecutandoNodeJS()
         {
 
-            string statusCodeEsperado = "OK";
+            string statusCodeEsperado = "Created";
 
             AddIssueTagRequest addIssueTagRequest = new AddIssueTagRequest();
             addIssueTagRequest.setJsonBody();

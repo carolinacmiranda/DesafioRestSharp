@@ -1,17 +1,17 @@
 {
-    "id": 1,
-    "name": "MantisTest",
-    "status": {
-       "id": 1,
-       "name": "development",
-       "label": "development"
-     },
-     "description": "Mantis.  Report problems with the actual bug tracker here. (Do not remove this account)",
-     "enabled": true,
-     "file_path": "/tmp/",
-     "view_state": {
-       "id": 1,
-       "name": "public",
-       "label": "public"
-     }
- }
+  "id": 1,
+  "name": "MantisTest1",
+  "status": {
+     "id": 10,
+     "name": "development",
+     "label": "development"
+   },
+   "description": "Mantis.  Report problems with the actual bug tracker here. (Do not remove this account)",
+   "enabled": true,
+   "file_path": "/tmp/",
+   "view_state": {
+     "id": 10,
+     "name": "public",
+     "label": "public"
+   }
+}

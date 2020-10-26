@@ -17,7 +17,7 @@ namespace RestSharpNetCoreTemplate.Tests.Issues
         [Obsolete]
         public void DesanexarTagNoProblema()
         {
-            string statusCodeEsperado = "OK";
+            string statusCodeEsperado = "Created";
 
             DAddIssueTagRequest daddIssueTagRequest = new DAddIssueTagRequest();
             daddIssueTagRequest.setJsonBody();

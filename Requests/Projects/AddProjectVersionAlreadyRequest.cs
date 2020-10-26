@@ -14,7 +14,7 @@ namespace RestSharpNetCoreTemplate.Requests.Projects
     {
         public AddProjectVersionAlreadyRequest()
         {
-            url = "http://192.168.99.100:8989";
+            url = JsonBuilder.ReturnParameterAppSettings("URL");
             requestService = "/api/rest/projects/10/versions/";
             method = Method.POST;
         }

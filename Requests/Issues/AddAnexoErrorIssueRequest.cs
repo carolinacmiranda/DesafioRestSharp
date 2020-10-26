@@ -14,7 +14,7 @@ namespace RestSharpNetCoreTemplate.Requests.Issues
     {
         public AddAnexoErrorIssueRequest()
         {
-            url = "http://192.168.99.100:8989";
+            url = JsonBuilder.ReturnParameterAppSettings("URL");
             requestService = "/api/rest/issues/0/files";
             method = Method.POST;
         }

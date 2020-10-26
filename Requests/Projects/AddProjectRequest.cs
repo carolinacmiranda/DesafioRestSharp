@@ -14,7 +14,7 @@ namespace RestSharpNetCoreTemplate.Requests.Projects
     {
         public AddProjectRequest()
         {
-            url = "http://192.168.99.100:8989";
+            url = JsonBuilder.ReturnParameterAppSettings("URL");
             requestService = "/api/rest/projects/";
             method = Method.POST;
         }

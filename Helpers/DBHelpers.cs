@@ -15,7 +15,7 @@ namespace RestSharpNetCoreTemplate.Helpers
         {
 
             MySqlConnection myConnection = new MySqlConnection();
-            myConnection.ConnectionString = "Persist Security Info=False;database=bugtracker;server=192.168.99.100;port=3306;Connect Timeout=30;user id=root; pwd=root";
+            myConnection.ConnectionString = "Persist Security Info=False;database=bugtracker;server=192.168.99.101;port=3306;Connect Timeout=30;user id=root; pwd=root";
             //myConnection.Open();
 
             return myConnection;
@@ -77,26 +77,8 @@ namespace RestSharpNetCoreTemplate.Helpers
             }
 
             return lista;
-        }
-
-        public static void ResetBD()
-        {            
-            string pathProject = GeneralHelpers.ReturnProjectPath();
-            string file = pathProject + "Resources\\Mantis_Base.sql";
-            using (MySqlConnection conn = GetDBConnection())
-            {
-                using (MySqlCommand cmd = new MySqlCommand())
-                {
-                    using (MySqlBackup mb = new MySqlBackup(cmd))
-                    {
-                        cmd.Connection = conn;
-                        conn.Open();
-                        mb.ImportFromFile(file);
-                        conn.Close();
-                    }
-                }
-            }
-        }
+        }        
+        
     }
 }
 

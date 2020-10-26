@@ -15,7 +15,7 @@ namespace RestSharpNetCoreTemplate.Tests.Projects
         [Obsolete]
         public void BuscarProjetoExistente()
         {
-            string id = "10";
+            string id = "0";
             string statusCodeEsperado = "OK";
 
             FindProjectRequest findProjectRequest = new FindProjectRequest(id);

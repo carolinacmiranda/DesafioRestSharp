@@ -14,8 +14,8 @@ namespace RestSharpNetCoreTemplate.Requests.Projects
     {
         public UpProjectRequest()
         {
-            url = "http://192.168.99.100:8989";
-            requestService = "/api/rest/projects/10";
+            url = JsonBuilder.ReturnParameterAppSettings("URL");
+            requestService = "/api/rest/projects/33";
             method = Method.PATCH;
         }
 

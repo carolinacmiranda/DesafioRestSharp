@@ -15,9 +15,9 @@ namespace RestSharpNetCoreTemplate.Tests.Projects
     {
         [Test, Order(5)]
         [Obsolete]
-        public void AtualizarProjetoExistente()
+        public void AtualizarProjetoQueNãoExiste()
         {
-            string statusCodeEsperado = "OK";
+            string statusCodeEsperado = "NotFound";
 
             UpProjectRequest upProjectRequest = new UpProjectRequest();
             upProjectRequest.setJsonBody();

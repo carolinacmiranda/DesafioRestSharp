@@ -1,20 +1,20 @@
 {
     "summary": "Problema API Rest",
-    "description": "Um problema na API Rest",
+    "description": "MantisTest",
     "additional_information": "API RestSharp",
     "project": {
-        "id": 10,
-        "name": "MantisTest"
+        "id": 0,
+        "name": "MantisTest1"
     },
     "category": {
-        "id": 10,
+        "id": 5,
         "name": "bugtracker"
     },
     "handler": {
         "name": "vboctor"
     },
     "view_state": {
-        "id": 10,
+        "id": 5,
         "name": "public"
     },
     "priority": {
@@ -30,7 +30,7 @@
     "custom_fields": [
         {
             "field": {
-                "id": 10,
+                "id": 5,
                 "name": "Minas Gerais"
             },
             "value": "Belo Horizonte"

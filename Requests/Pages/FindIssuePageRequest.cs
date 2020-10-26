@@ -1,5 +1,6 @@
 using RestSharp;
 using RestSharpNetCoreTemplate.Bases;
+using RestSharpNetCoreTemplate.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -10,7 +11,7 @@ namespace RestSharpNetCoreTemplate.Requests.Pages
     {
         public FindIssuePageRequest(string id)
         {
-            url = "http://192.168.99.100:8989";
+            url = JsonBuilder.ReturnParameterAppSettings("URL");
             requestService = "/api/rest/issues/25";
             method = Method.GET;
             parameters.Add("25", id);

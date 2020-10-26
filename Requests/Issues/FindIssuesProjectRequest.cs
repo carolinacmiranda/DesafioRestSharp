@@ -1,5 +1,6 @@
 using RestSharp;
 using RestSharpNetCoreTemplate.Bases;
+using RestSharpNetCoreTemplate.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -10,10 +11,10 @@ namespace RestSharpNetCoreTemplate.Requests.Issues
     {
         public FindIssuesProjectRequest(string id)
         {
-            url = "http://192.168.99.100:8989";
-            requestService = "/api/rest/issues?project_id=11";
+            url = JsonBuilder.ReturnParameterAppSettings("URL");
+            requestService = "/api/rest/issues?project_id=0";
             method = Method.GET;
-            parameters.Add("11", id);
+            parameters.Add("0", id);
         }
     }
 }

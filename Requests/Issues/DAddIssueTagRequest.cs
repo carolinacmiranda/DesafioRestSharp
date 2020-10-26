@@ -14,7 +14,7 @@ namespace RestSharpNetCoreTemplate.Requests.Issues
     {
         public DAddIssueTagRequest()
         {
-            url = "http://192.168.99.100:8989";
+            url = JsonBuilder.ReturnParameterAppSettings("URL");
             requestService = "/api/rest/issues/12/notes";
             method = Method.POST;
         }

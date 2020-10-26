@@ -16,7 +16,7 @@ namespace RestSharpNetCoreTemplate.Tests.Issues
         public void MonitorarProblemaExistente()
         {
             string id = "12";
-            string statusCodeEsperado = "OK";
+            string statusCodeEsperado = "Created";
 
             MonitorIssueRequest monitorIssueRequest = new MonitorIssueRequest(id);
 

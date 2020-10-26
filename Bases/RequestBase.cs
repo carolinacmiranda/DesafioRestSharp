@@ -27,7 +27,7 @@ namespace RestSharpNetCoreTemplate.Bases
         {
             //Dicionário de headeres deve ser iniciado com os headers comuns a todos os métodos da API
             {"Content-Type", "application/json"},
-            {"Authorization", "4EEmRCd7Cr7tlGnNrD07VafMGwneXsm3"},
+            {"Authorization", "LwWfZoLu7xIRIGIaP7Wl5DCcxCk_2dk9"},
         };
                
         protected IDictionary<string, string> cookies = new Dictionary<string, string>()

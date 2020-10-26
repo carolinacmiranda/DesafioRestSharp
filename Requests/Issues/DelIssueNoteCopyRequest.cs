@@ -1,5 +1,6 @@
 using RestSharp;
 using RestSharpNetCoreTemplate.Bases;
+using RestSharpNetCoreTemplate.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -10,7 +11,7 @@ namespace RestSharpNetCoreTemplate.Requests.Issues
     {
         public DelIssueNoteCopyRequest(string issue_id, string relationship_id)
         {
-            url = "http://192.168.99.100:8989";
+            url = JsonBuilder.ReturnParameterAppSettings("URL");
             requestService = "/api/rest/issues/20/relationships/1";
             method = Method.DELETE;
             parameters.Add("20", issue_id);

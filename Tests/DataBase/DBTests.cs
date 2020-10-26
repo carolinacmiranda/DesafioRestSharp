@@ -23,26 +23,27 @@ namespace RestSharpNetCoreTemplate.Tests.DataBase
         [SetUp]
         public void BeforeTest()
         {
-            ProjectsDBSteps.AddNewProject("22");
+            ProjectsDBSteps.AddNewProject("30");
         }
         
         [Test]
         [Obsolete]
         public void ValidarProjetoDB()
         {
-
             string statusEsperado = "OK";
-            string id = "22";
-            string description = "Mantis.  Report problems with the actual bug tracker here. (Do not remove this account)";
+            string id = "30";
             
-            FindProjectRequest findProjectRequest = new FindProjectRequest(id);
-            RestSharp.IRestResponse<dynamic> response = findProjectRequest.ExecuteRequest();
-
-            string descriptionResposta = response.Data["projects"][0]["description"];
+            FindProjectDBRequest findProjectDBRequest = new FindProjectDBRequest(id);
+            RestSharp.IRestResponse<dynamic> response = findProjectDBRequest.ExecuteRequest();
 
             Assert.AreEqual(statusEsperado, response.StatusCode.ToString());
-            Assert.AreEqual(description, descriptionResposta);
             
-        }        
+        } 
+
+        [TearDown]
+        public void AfterTest()
+        {
+            ProjectsDBSteps.DeleteNewProject();
+        }       
     }
 }
